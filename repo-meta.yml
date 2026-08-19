@@ -1,0 +1,7 @@
+github_repo: whitehat-secret-policy
+description: White-hat leak-finder policy: validated vs candidate, never auto-disclose.
+homepage: START_HERE.md
+private: false
+topics: security,secrets,white-hat,policy,ai-agents
+source_folder: hunter-capabilities
+python: '3.12'
