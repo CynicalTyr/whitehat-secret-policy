@@ -1,7 +1,7 @@
 github_repo: whitehat-secret-policy
-description: White-hat leak-finder policy: validated vs candidate, never auto-disclose.
+description: Review enqueue only when a secret is validated. Candidates stay masked; never auto-disclose to Slack.
 homepage: START_HERE.md
 private: false
-topics: security,secrets,white-hat,policy,ai-agents
+topics: secret-scanning,alert-fatigue,white-hat,secrets,policy,ai-agents
 source_folder: hunter-capabilities
 python: '3.12'

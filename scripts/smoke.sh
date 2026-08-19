@@ -5,4 +5,4 @@ cd "$ROOT"
 export PYTHONPATH="${ROOT}${PYTHONPATH:+:$PYTHONPATH}"
 python3 -m unittest discover -s tests -q
 python3 examples/quickstart.py >/dev/null
-echo "smoke ok: $ROOT"
+echo "smoke ok"

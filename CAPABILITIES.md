@@ -78,12 +78,15 @@ matches in `*.min.js` / `*.map`.
 ## 4. Review enqueue (the unique product)
 
 Stage a systems-review envelope **only when `valid_keys_found > 0`**.
-Candidate-only and empty scans stay on disk. A review gate should
-**REJECT** hunter envelopes that escalate with zero validated keys
-(alarm fatigue otherwise trains humans to ignore real keys).
+That boolean is `should_enqueue_review` in `review_gate.py`.
+Candidate-only and empty scans stay on disk. `escalate_is_contract_error`
+is True when a hunter envelope uses verdict `ESCALATE` with zero
+validated keys (alarm fatigue otherwise trains humans to ignore real
+keys).
 
-Dedup memory (`seen_findings.json`) marks repeats so the same leaked
-token does not page every night.
+Dedup memory (`seen_findings.json` in *your* private tree) marks
+repeats so the same leaked token does not page every night. Do not
+commit that file here.
 
 ---
 
